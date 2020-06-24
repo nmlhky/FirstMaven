@@ -1,7 +1,10 @@
 package TNG_Tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import managers.DriverMgr;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,11 +20,15 @@ public class DatePickerBonigarcia_Test {
 
     @BeforeClass
     public void setup() {
+
         //System.setProperty("webdriver.chrome.driver","C:\IJProjs\\chromedriver.exe");
         baseUrl = "https://jqueryui.com/";
-       // WebDriverManager.firefoxdriver().setup();
-       // driver = new FirefoxDriver();
-        driver = DriverMgr.getDriver();
+        //WebDriverManager.chromedriver().setup();
+        //driver = new FirefoxDriver();
+        //driver = new ChromeDriver();
+        //driver = DriverMgr.getDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
         jQueryHPage = new JQueryHPage(driver);
         datepickerPage = new DatepickerPage(driver);
         driver.manage().window().maximize();
@@ -41,7 +48,7 @@ public class DatePickerBonigarcia_Test {
 //        System.setProperty("date","5");
        // datepickerPage.getAllDates("4");
         datepickerPage.getAllDates(System.getProperty("date"));
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 
 }
