@@ -9,82 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">76,136</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">82,331</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TNG_Tests.DatePickerBonigarcia_Test</td><td><a href="#m0">setup</a></td><td rowspan="1">1592944197667</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">TNG_Tests.DatePicker_Test</td><td><a href="#m1">setup</a></td><td rowspan="1">1592944197670</td><td rowspan="1">13085</td></tr><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TNG_Tests.ControlGroup_Test</td><td><a href="#m2">clickControlGroup</a></td><td rowspan="1">1592944140920</td><td rowspan="1">56207</td></tr><tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">TNG_Tests.DatePickerBonigarcia_Test</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1592944197669</td><td rowspan="1">-1592944197669</td></tr><tr class="skippedodd"><td rowspan="1">TNG_Tests.DatePicker_Test</td><td><a href="#m4">tearDown</a></td><td rowspan="1">1592944210756</td><td rowspan="1">-1592944210756</td></tr><tr><th colspan="4">Command line test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">TNG_Tests.DatePickerBonigarcia_Test</td><td><a href="#m5">selectDateTest</a></td><td rowspan="1">1592944197669</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">TNG_Tests.DatePicker_Test</td><td><a href="#m6">selectDateTest</a></td><td rowspan="1">1592944210756</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TNG_Tests.DatePickerBonigarcia_Test</td><td><a href="#m0">selectDateTest</a></td><td rowspan="1">1593018957038</td><td rowspan="1">12</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TNG_Tests.ControlGroup_Test</td><td><a href="#m1">clickControlGroup</a></td><td rowspan="1">1593018953577</td><td rowspan="1">252</td></tr><tr class="passedodd"><td rowspan="1">TNG_Tests.DatePicker_Test</td><td><a href="#m2">selectDateTest</a></td><td rowspan="1">1593018963594</td><td rowspan="1">5519</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">TNG_Tests.DatePickerBonigarcia_Test#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at managers.DriverMgr.getDriver(DriverMgr.java:15)
-	at TNG_Tests.DatePickerBonigarcia_Test.setup(DatePickerBonigarcia_Test.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TNG_Tests.DatePicker_Test#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=83.0.4103.106)
+<h2>Command line test</h2><h3 id="m0">TNG_Tests.DatePickerBonigarcia_Test#selectDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[text()=&apos;Datepicker&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-B6TJ4KV&apos;, ip: &apos;192.168.1.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00CC9563+2725219]
-	Ordinal0 [0x00BC8551+1672529]
-	Ordinal0 [0x00AB0202+524802]
-	Ordinal0 [0x00AA99B2+498098]
-	Ordinal0 [0x00AAA09B+499867]
-	Ordinal0 [0x00AAAFF5+503797]
-	Ordinal0 [0x00AA6994+485780]
-	Ordinal0 [0x00AB0FF0+528368]
-	Ordinal0 [0x00A5D6C9+186057]
-	Ordinal0 [0x00A5CA3D+182845]
-	Ordinal0 [0x00A5A94B+174411]
-	Ordinal0 [0x00A42528+75048]
-	Ordinal0 [0x00A435A0+79264]
-	Ordinal0 [0x00A43539+79161]
-	Ordinal0 [0x00BDD607+1758727]
-	GetHandleVerifier [0x00DE6546+1050150]
-	GetHandleVerifier [0x00DE6291+1049457]
-	GetHandleVerifier [0x00DF10D7+1094071]
-	GetHandleVerifier [0x00DE6B46+1051686]
-	Ordinal0 [0x00BD5B06+1727238]
-	Ordinal0 [0x00BDEB7B+1764219]
-	Ordinal0 [0x00BDECE3+1764579]
-	Ordinal0 [0x00BF4C05+1854469]
-	BaseThreadInitThunk [0x75EDF989+25]
-	RtlGetAppContainerNamedObjectPath [0x773C7084+228]
-	RtlGetAppContainerNamedObjectPath [0x773C7054+180]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at TNG_Tests.DatePicker_Test.setup(DatePicker_Test.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TNG_Tests.ControlGroup_Test#clickControlGroup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B6TJ4KV&apos;, ip: &apos;192.168.1.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\nmeli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fe6b286004adc6a42a29766eb6847a3d
-*** Element info: {Using=class name, value=demo-frame}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 916, moz:profile: C:\Users\nmeli\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2efcdcd1-0c27-4ade-9063-98f09ad0e32e
+*** Element info: {Using=xpath, value=//a[text()=&apos;Datepicker&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -92,83 +28,17 @@ Session ID: fe6b286004adc6a42a29766eb6847a3d
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:891)
-	at pageObjects.JQueryHPage.switchFrame(JQueryHPage.java:34)
-	at TNG_Tests.ControlGroup_Test.clickControlGroup(ControlGroup_Test.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pageObjects.JQueryHPage.clickDatePicker(JQueryHPage.java:30)
+	at TNG_Tests.DatePickerBonigarcia_Test.selectDateTest(DatePickerBonigarcia_Test.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
 ... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TNG_Tests.DatePickerBonigarcia_Test#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TNG_Tests.DatePicker_Test#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TNG_Tests.DatePickerBonigarcia_Test#selectDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at managers.DriverMgr.getDriver(DriverMgr.java:15)
-	at TNG_Tests.DatePickerBonigarcia_Test.setup(DatePickerBonigarcia_Test.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TNG_Tests.DatePicker_Test#selectDateTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
-from chrome not reachable
-  (Session info: chrome=83.0.4103.106)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-B6TJ4KV&apos;, ip: &apos;192.168.1.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00CC9563+2725219]
-	Ordinal0 [0x00BC8551+1672529]
-	Ordinal0 [0x00AB0202+524802]
-	Ordinal0 [0x00AA99B2+498098]
-	Ordinal0 [0x00AAA09B+499867]
-	Ordinal0 [0x00AAAFF5+503797]
-	Ordinal0 [0x00AA6994+485780]
-	Ordinal0 [0x00AB0FF0+528368]
-	Ordinal0 [0x00A5D6C9+186057]
-	Ordinal0 [0x00A5CA3D+182845]
-	Ordinal0 [0x00A5A94B+174411]
-	Ordinal0 [0x00A42528+75048]
-	Ordinal0 [0x00A435A0+79264]
-	Ordinal0 [0x00A43539+79161]
-	Ordinal0 [0x00BDD607+1758727]
-	GetHandleVerifier [0x00DE6546+1050150]
-	GetHandleVerifier [0x00DE6291+1049457]
-	GetHandleVerifier [0x00DF10D7+1094071]
-	GetHandleVerifier [0x00DE6B46+1051686]
-	Ordinal0 [0x00BD5B06+1727238]
-	Ordinal0 [0x00BDEB7B+1764219]
-	Ordinal0 [0x00BDECE3+1764579]
-	Ordinal0 [0x00BF4C05+1854469]
-	BaseThreadInitThunk [0x75EDF989+25]
-	RtlGetAppContainerNamedObjectPath [0x773C7084+228]
-	RtlGetAppContainerNamedObjectPath [0x773C7054+180]
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at TNG_Tests.DatePicker_Test.setup(DatePicker_Test.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TNG_Tests.ControlGroup_Test#clickControlGroup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TNG_Tests.DatePicker_Test#selectDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

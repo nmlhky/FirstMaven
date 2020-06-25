@@ -3,13 +3,6 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="TNG_Tests.DatePicker_Test">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="selectDateTest"/>
-        </methods>
-      </class> <!-- TNG_Tests.DatePicker_Test -->
       <class name="TNG_Tests.DatePickerBonigarcia_Test">
         <methods>
           <include name="tearDown"/>
@@ -17,13 +10,6 @@
           <include name="selectDateTest"/>
         </methods>
       </class> <!-- TNG_Tests.DatePickerBonigarcia_Test -->
-      <class name="TNG_Tests.ControlGroup_Test">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="clickControlGroup"/>
-        </methods>
-      </class> <!-- TNG_Tests.ControlGroup_Test -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
