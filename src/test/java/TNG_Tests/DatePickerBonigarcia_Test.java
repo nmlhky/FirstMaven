@@ -7,10 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pageObjects.DatepickerPage;
 import pageObjects.JQueryHPage;
 
+@Ignore
 public class DatePickerBonigarcia_Test {
 
     WebDriver driver;

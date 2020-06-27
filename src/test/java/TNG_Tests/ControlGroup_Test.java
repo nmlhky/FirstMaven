@@ -5,10 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pageObjects.ControlGroupPage;
 import pageObjects.JQueryHPage;
 
+@Ignore
 public class ControlGroup_Test {
 
     WebDriver driver;
