@@ -2,7 +2,7 @@ package stepDefs;
 
 import io.cucumber.java.en.Given;
 import managers.DriverMgr;
-import org.testng.Assert;
+import org.junit.Assert;
 import pageObjects.ControlGroupPage;
 
 public class ControlgroupDefs {

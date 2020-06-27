@@ -20,7 +20,7 @@ public class Hooks {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
         System.out.println("inside @After Hook");
     }
 
