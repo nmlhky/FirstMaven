@@ -16,7 +16,7 @@ public class CheckboxRadioDefs {
         System.out.println("completed number of elements validation > "+ type );
     }
 
-    @And("I select \"(.*)\" radio button")
+    @And("I select \"(.*)\" radio button$")
     public void select_radio(String city) throws InterruptedException {
         Assertions.assertTrue( checkBoxRadioPage.selectRadio(city));
         System.out.println("completed selecting radio" );

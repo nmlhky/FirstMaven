@@ -13,7 +13,7 @@ public class CheckBoxRadioPage {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css = ".ui-checkboxradio-radio-label>span.ui-checkboxradio-icon")
+    @FindBy(css = ".ui-checkboxradio-radio-label>span.ui-checkboxradio-icon") //to get counts
     List<WebElement> allRadios;
 
     @FindBy(xpath = "//fieldset[legend[text()='Hotel Ratings: ']]//label//span[1]")
@@ -22,7 +22,7 @@ public class CheckBoxRadioPage {
     @FindBy(xpath = "//fieldset[legend[text()='Bed Type: ']]//label//span[1]")
     List<WebElement> allBedTypes;
 
-    @FindBy(css = ".ui-checkboxradio-radio-label")
+    @FindBy(css = ".ui-checkboxradio-radio-label") // new locator to find elements and click
     List<WebElement> allRadios1;
 
     public int elementSize(String type) {

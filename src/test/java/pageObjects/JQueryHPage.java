@@ -23,11 +23,10 @@ public class JQueryHPage {
     WebElement frame;
 
     @FindBy(xpath = "//a[text()='Checkboxradio']")
-    WebElement Checkboxradio;
+    WebElement checkboxradio;
 
-
-    public void clickCheckboxradio () {
-        Checkboxradio.click();
+    public void clickCheckboxRadio() {
+        checkboxradio.click();
     }
 
     public void clickCtrlGroup () {

@@ -1,3 +1,4 @@
+
 package runners;
 
 import io.cucumber.junit.Cucumber;
@@ -10,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features", //location of the features file folder
         glue = {"stepDefs"}, //location of the step definition classes
         //tags = "@multiparams or @doublequoteparams or @doublequoteparam1 or @wordparam", //to run multiple tags
-        tags = "@radiosselection",
+        // tags = "@radiosselection", // running from maven using command: mvn clean verify -Dcucumber.filter.tags="@radiosselection"
         plugin = {"pretty","html:target/cucumber.html", "json:target/cucumber.json"}
 )
 public class RunCukesTest {
